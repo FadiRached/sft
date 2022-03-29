@@ -480,32 +480,24 @@ describe("Check the Profile Dropdown functionality", function () {
       let errorMessage = "Wallet Redirect did not work";
       equal(e.toString(), errorMessage);
     }
-    it("Favorites option is clicked", function () {
-      try {
-        equal(BBB.FavoritesRedirect(), true);
-      } catch (error) {
-        let errorMessage = "Favorites Redirect did not work";
-        equal(e.toString(), errorMessage);
-      }
-      it("Watchlist option is clicked", function () {
-        try {
-          equal(BBB.WatchlistRedirect(), true);
-        } catch (error) {
-          let errorMessage = "Watchlist Redirect did not work";
-          equal(e.toString(), errorMessage);
-        }
-        it("Settings option is clicked", function () {
-          try {
-            equal(BBB.SettingsRedirect(), true);
-          } catch (error) {
-            let errorMessage = "Settings Redirect did not work";
-            equal(e.toString(), errorMessage);
-          }
-        });
-      });
-    });
   });
-});
+  it("Favorites option is clicked", function () {
+    try {
+      equal(BBB.FavoritesRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Favorites Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(BBB.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  });
 var assert = require("assert");
 describe("validateeSFT bought SFT is an SFT then send to wallet", function () {
   it("ValidateSFT is a jpg", function () {
