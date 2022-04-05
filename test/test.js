@@ -150,6 +150,36 @@ class Website {
     WatchlistRedirect(){
       return true;
     }
+    AllSFTsRedirect(){
+      return true;
+    }
+    ArtRedirect(){
+      return true;
+    }
+    COllectiblesRedirect(){
+      return true;
+    }
+    DomainNamesRedirect(){
+      return true;
+    }
+    MusicRedirect(){
+      return true;
+    }
+    PhotographyRedirect(){
+      return true;
+    }
+    SportsRedirect(){
+      return true;
+    }
+    TradingCardsRedirect(){
+      return true;
+    }
+    UtilityRedirect(){
+      return true;
+    }
+    VirtualWorldsRedirect(){
+      return true;
+    }
 }
 
 // instance of the ethereum network. Each node hosts all the Ethereum transactions and syncs constantly with all the other nodes in the network
@@ -492,6 +522,90 @@ describe("Check the Profile Dropdown functionality", function () {
   it("Settings option is clicked", function () {
     try {
       equal(BBB.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  });
+  var assert = require("assert");
+let  = new Website();
+describe("Check the Profile Dropdown functionality", function () {
+  it("Edit option is clicked", function() {
+    try {
+      equal(CCC.EditRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Edit Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Collection option is clicked", function () {
+    try {
+      equal(CCC.CollectionRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Collection Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Wallet option is clicked", function () {
+    try {
+      equal(CCC.WalletRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Wallet Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Favorites option is clicked", function () {
+    try {
+      equal(CCC.FavoritesRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Favorites Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(CCC.SettingsRedirect(), true);
     } catch (error) {
       let errorMessage = "Settings Redirect did not work";
       equal(e.toString(), errorMessage);
