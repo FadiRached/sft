@@ -612,6 +612,8 @@ describe("e", function () {
   });
 });
 
+//firebase integration soon
+
 
 var assert = require("assert");
 describe("e", function () {
