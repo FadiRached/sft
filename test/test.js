@@ -13,7 +13,7 @@
  */
 
 
-//This is Joe's Change
+//This is Joe's Change 2
 // jacob changes poggers
 // bIG CHANGE -jOEL
 
@@ -68,6 +68,14 @@ class Wallet {
    * @returns 
    */
   setSFTs(){
+    return true;
+  }
+  /**
+   * transaction that gives very small amount of ethereum and takes away to confirm right wallet
+   * asks user for the amount that was in the transaction like a confirmation code
+   * @returns 
+   */
+  testTransaction(){
     return true;
   }
 }
@@ -132,6 +140,24 @@ class Website {
     // }
     return true;
   }
+    SettingsRedirect(){
+    return true;
+  }
+    EditRedirect(){
+    return true;
+  }
+    WalletRedirect(){
+    return true;
+  }
+    CollectionRedirect(){
+    return true;
+  }
+    FavoritesRedirect(){
+      return true;
+    }
+    WatchlistRedirect(){
+      return true;
+    }
 }
 
 // instance of the ethereum network. Each node hosts all the Ethereum transactions and syncs constantly with all the other nodes in the network
@@ -428,7 +454,58 @@ describe("searchAndBidding", function () {
     }
   });
 });
-
+var assert = require("assert");
+let BBB = new Website();
+describe("Check the Profile Dropdown functionality", function () {
+  it("Edit option is clicked", function() {
+    try {
+      equal(BBB.EditRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Edit Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Collection option is clicked", function () {
+    try {
+      equal(BBB.CollectionRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Collection Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(BBB.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Wallet option is clicked", function () {
+    try {
+      equal(BBB.WalletRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Wallet Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Favorites option is clicked", function () {
+    try {
+      equal(BBB.FavoritesRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Favorites Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  it("Settings option is clicked", function () {
+    try {
+      equal(BBB.SettingsRedirect(), true);
+    } catch (error) {
+      let errorMessage = "Settings Redirect did not work";
+      equal(e.toString(), errorMessage);
+    }
+  });
+  });
 var assert = require("assert");
 describe("validateeSFT bought SFT is an SFT then send to wallet", function () {
   it("ValidateSFT is a jpg", function () {
@@ -506,7 +583,7 @@ describe("e", function () {
   }); 
 });
 
-//Ethnode able to accept transcation input from website
+//Ethnode able to accept transaction input from website
 var assert = require("assert");
 describe("e", function () {
   it("should fire ethNode.connect when connect button is clicked", function () {
@@ -534,4 +611,20 @@ describe("e", function () {
     }
   });
 });
+
+
+var assert = require("assert");
+describe("e", function () {
+  it("should fire ethNode.connect when connect button is clicked", function () {
+    try {
+      equal(website.btnOnSubmitClick(), wallet.connect());
+      equal(myWallet.testTransaction(), true);
+    } catch (error) {
+      let errorMessage = "this.SFT is not a valid SFT";
+      equal(e.toString(), errorMessage);
+    }
+  });
+});
+});
+
 });
