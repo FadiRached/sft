@@ -7,7 +7,7 @@ function btnBuyThis(btn) {
     var img = btn.nextElementSibling.cloneNode(false);
     var desc = btn.parentNode.children[3].cloneNode(true);
     var purchase = btn.cloneNode(true);
-    purchase.onclick = purchaseSFT;
+    purchase.onclick = purchaseSFT(this);
     purchase.id = "purchasebtn";
     purchase.innerHTML = "Purchase SFT";
     document.querySelector(".modal-content").appendChild(img);
@@ -28,12 +28,20 @@ function closeModal() {
 window.onclick = function(event) {
   if (event.target == document.querySelector("#myModal")) {
     document.querySelector("#myModal").style.display = "none";
-    while(document.querySelector(".modal-content").children[1] != null){
-        document.querySelector(".modal-content").removeChild(document.querySelector(".modal-content").children[1]);
-      }
+    clearModal();
   }
 }
 
-function purchaseSFT(){
+function clearModal(){
+  while(document.querySelector(".modal-content").children[1] != null){
+    document.querySelector(".modal-content").removeChild(document.querySelector(".modal-content").children[1]);
+  }
+}
 
+function purchaseSFT(purchaseBtn){
+  //Increase rank in store
+  //apply sft to profile
+  var img = purchaseBtn.previousElementSibling.previousElementSibling.cloneNode(false);
+  var newCard = document.getElementById("collectionCards").createElement("div");
+  newCard.appendChild(img);
 }
