@@ -6,8 +6,8 @@ function btnConnectWalletOnClick() {
 function btnBuyThis(btn) {
     var img = btn.nextElementSibling.cloneNode(false);
     var desc = btn.parentNode.children[3].cloneNode(true);
-    var purchase = btn.cloneNode(true);
-    purchase.onclick = purchaseSFT(this);
+    var purchase = document.createElement("button");
+    purchase.onclick = function() { purchaseSFT(img)};
     purchase.id = "purchasebtn";
     purchase.innerHTML = "Purchase SFT";
     document.querySelector(".modal-content").appendChild(img);
@@ -38,10 +38,15 @@ function clearModal(){
   }
 }
 
-function purchaseSFT(purchaseBtn){
+function purchaseSFT(img){
   //Increase rank in store
   //apply sft to profile
-  var img = purchaseBtn.previousElementSibling.previousElementSibling.cloneNode(false);
-  var newCard = document.getElementById("collectionCards").createElement("div");
-  newCard.appendChild(img);
+
+  //Need to figure out a database to apply picture to.
+  console.log(document.querySelector("h1").textContent);
+  window.location.href = "collection.html";
+  console.log(document.querySelector("h1").textContent);
+  var newCard = document.querySelector(".card").cloneNode(true);
+  newCard.children[0] = img;
+  document.querySelector("#collectionCards").appendChild(newCard);
 }
