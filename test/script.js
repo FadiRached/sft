@@ -42,7 +42,7 @@ function purchaseSFT(img){
   //Increase rank in store
   //apply sft to profile
 
-  //Need to figure out a database to apply picture to.
+  //Need to figure out a database to apply picture to. This is testing code.
   console.log(document.querySelector("h1").textContent);
   window.location.href = "collection.html";
   console.log(document.querySelector("h1").textContent);
