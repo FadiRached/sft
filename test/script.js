@@ -1,3 +1,5 @@
+let myWallet = new wallet(1,0,0);
+
 function btnConnectWalletOnClick() {
     console.log('click');
 }
@@ -7,7 +9,7 @@ function btnBuyThis(btn) {
     var img = btn.nextElementSibling.cloneNode(false);
     var desc = btn.parentNode.children[3].cloneNode(true);
     var purchase = btn.cloneNode(true);
-    purchase.onclick = purchaseSFT;
+    //purchase.onclick = purchaseSFT(img);
     purchase.id = "purchasebtn";
     purchase.innerHTML = "Purchase SFT";
     document.querySelector(".modal-content").appendChild(img);
@@ -34,6 +36,13 @@ window.onclick = function(event) {
   }
 }
 
-function purchaseSFT(){
+function purchaseSFT(img){
+  myWallet.StoreSFT(img);
+}
 
+function viewWallet(wallet) {
+  var sftlist = wallet.GetWalletSFTS();
+  for (i=0; i <= sftlist.length(); i++) {
+
+  }
 }
