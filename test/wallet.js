@@ -31,13 +31,12 @@ class wallet {
    *
    * @returns
    */
-  GetWalletSFTs() {
-    let mySFTs = [
-      { id: 0, link: "monkey0.jpg" },
-      { id: 1, link: "monkey1.jpg" },
-      { id: 3, link: "monkey3.jpg" },
-    ];
-    return mySFTs;
+  GetWalletSFTs() { 
+    return this.SFTS;
+  }
+
+  StoreSFT(img) {
+    this.SFTS.push(img);
   }
 
   /**
