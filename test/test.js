@@ -12,7 +12,7 @@
  * SFT image rendered in DOM
  */
 
-
+//taylor
 //This is Joe's Change
 // jacob changes poggers
 // bIG CHANGE -jOEL
