@@ -11,5 +11,9 @@ app.get("/", function(req,res) {
   res.send("<h1>Hello CS225</h1>");
 })
 
+app.post("/userPage", function(req, res){
+  let html = `<h1>Welcome to the user page! Here is your username: ${req.body.username}</h1>`;
+  res.send(html);
+})
 app.listen(3000);
 
