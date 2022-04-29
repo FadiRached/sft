@@ -12,8 +12,11 @@ app.get("/", function(req,res) {
 })
 
 app.post("/userPage", function(req, res){
-  let html = `<h1>Welcome to the user page! Here is your username: ${req.body.username}</h1>`;
-  res.send(html);
+  var locals = {
+    username: req.body.username 
+  };
+
+  res.render("user_page", locals);
 })
 app.listen(3000);
 
