@@ -65,13 +65,12 @@ nav ul{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px;
     height: 270px;
-    max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: arial;
   }
 
-  #M1R0{
+  #M1R0 {
     width: 150px;
     height: 150px;
   }
