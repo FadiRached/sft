@@ -23,12 +23,23 @@
         </ul>
     </nav>
 
-    <form action="userPage" method="post">
-        <label>Username: </label>
-        <input type="text" name="username" id="username">  
-        <input type="submit" id="accountSubmit">
-        
-    </form>
+    <div id="userInfo">
+        <form action="userPage" method="post" id="logIn">
+            
+                <label>Username: </label>
+                <input type="text" name="username" id="username" class="accountInput"> 
+                
+                <!-- If keeping them on two lines is preferable. Handle that in CSS instead of the HTML --> 
+
+                <label>Password: </label>
+                <input type="password" name="password" id="password" class="accountInput">  
+
+                <input type="submit" id="accountSubmit">
+            
+        </form>
+    
+        <img src="img/NFT_comic.jpg" id="accountImage">
+    </div>
 
 </body>
 </html>
