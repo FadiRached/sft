@@ -2,141 +2,22 @@ body{
   background-color: bisque;
 }
 
-nav ul{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-around;
-    list-style:none;
-  }
-  
-  nav ul li{
-    padding: 1em;
-  }
-  
-  #main{
-    height:400px;
-    text-align:center;
-    color:greenyellow;
-    background-size:auto; 
-  }
+h1{
+  text-align: center;
+}
 
-  #main h1{
-    background-color:red;
-  }
+span h1{
 
-  #main p{
-    background-color:red;
-  }
+}
 
-  #main a{
-    background-color:red;
-  }
-
-  h2 + p{
-    background-color:black;
-    color:white;
-    padding:1em;
-  }
+#SFTButton{
+  /*This Style makes Button Look Like Link*/
+  background: none;
+  border: none;
+  padding: 0;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
   
-  #cards{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-around;
-    
-  }
-
-  #storeCards{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-around;
-    
-  }
-
-  #cards .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 2px dashed black;
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 270px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-
-  #M1R0 {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
-
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #f8797f;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .card #description{
-    display: none;
-  }
-
-  .modal-content #description{
-    display: inline-block;
-  }

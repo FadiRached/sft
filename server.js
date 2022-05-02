@@ -13,7 +13,8 @@ app.get("/", function(req,res) {
 
 app.post("/userPage", function(req, res){
   var locals = {
-    username: req.body.username 
+    username: req.body.username,
+    sfts: []
   };
 
   res.render("user_page", locals);
