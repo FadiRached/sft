@@ -12,16 +12,19 @@
 
 
     <script src="script.js"></script>
-    <h1 style="text-align: center;">User Account</h1>
 
     <nav>
-        <ul>
+        <ul id="nav1">
+            <img id="logo" src="img/Logo.png">
             <li><a href="index.html">Home</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="account.html">Account</a></li>
-            <li><a href="contactus.html">Contact Us and About SFT</a></li>
+
+            <li id="contact"><a href="contactus.html">Contact Us and About SFT</a></li>
         </ul>
     </nav>
+
+    <h1 style="text-align: center;">User Account</h1>
 
     <div id="userInfo">
         <form action="userPage" method="post" id="logIn">
@@ -29,7 +32,7 @@
                 <label>Username: </label>
                 <input type="text" name="username" id="username" class="accountInput"> 
                 
-                <!-- If keeping them on two lines is preferable. Handle that in CSS instead of the HTML --> 
+                 
 
                 <label>Password: </label>
                 <input type="password" name="password" id="password" class="accountInput">  

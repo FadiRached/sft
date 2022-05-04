@@ -9,50 +9,20 @@
 </head>
 <body>
 
-
-
     <script src="script.js"></script>
-    <h1 style="text-align: center;">Behold! My Store!</h1>
 
     <nav>
-        <ul>
+        <ul id="nav1">
+            <img id="logo" src="img/Logo.png">
             <li><a href="index.html">Home</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="account.html">Account</a></li>
-            <li><a href="contactus.html">Contact Us and About SFT</a></li>
+            <li id="contact"><a href="contactus.html">Contact Us and About SFT</a></li>
+
         </ul>
     </nav>
 
-    <div id="storeCards">
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/Monkey1.png">
-            <p>A traditional monkey image!</p>
-            <p id = "description"> This is where the extended description will go.</p>
-        </div>
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NewbieSFT.png">
-            <p>A high-class diva!</p>
-            <p id = "description"> This is where the extended description will go.</p>
-        </div>
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NoobieSFT.png">
-            <p>One Blocky Boi!</p>
-            <p id = "description"> This is where the extended description will go.</p>
-        </div>
-
-        <div class="card ">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NubieSFT.png">
-            <p>Smooth as Honey!</p>
-            <p id = "description"> This is where the extended description will go.</p>  
-        </div>
-    </div>
+    <h1 style="text-align: center;">Explore the SFT Collection</h1>
 
     <div id="myModal" class="modal">
 
@@ -67,9 +37,10 @@
                   <form class="form">
                       <input id="search" onkeyup = "search()" type="text" class="input" placeholder="search..."/>
                       <button id="clear" class="clear-results">clear</button>
-                  </form>
-    
-        </div>
+        </form>
+            
+        <button onclick="btnSell(this)"id="sell">Sell Your SFT</button>
+
         <div class="results-container">
            <ul class= "results-list" id="list">
            </ul>
@@ -77,6 +48,36 @@
     
            <script src="index.js"></script>
     </div>
-    
+
+     <div id="storeCards">
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img id="M1" src="img/Monkey1.png">
+            <p>Traditional Monkey</p>
+            <p id = "description"> This is where the extended description will go.</p>
+        </div>
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NewbieSFT.png">
+            <p>High-Class Diva</p>
+            <p id = "description"> This is where the extended description will go.</p>
+        </div>
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NoobieSFT.png">
+            <p>Blocky Boi</p>
+            <p id = "description"> This is where the extended description will go.</p>
+        </div>
+
+        <div class="card ">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NubieSFT.png">
+            <p>Smooth as Honey</p>
+            <p id = "description"> This is where the extended description will go.</p>  
+        </div>
+    </div>
 </body>
 </html>
