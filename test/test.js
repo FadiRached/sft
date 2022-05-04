@@ -12,11 +12,14 @@
  * SFT image rendered in DOM
  */
 
-
+//taylor1
 //This is Joe's Change
 // jacob changes poggers
 // bIG CHANGE -jOEL
 
+//Test push and commit
+
+//Second comment
 class Wallet {
   id;
   balance;

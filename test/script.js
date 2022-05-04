@@ -3,7 +3,7 @@ const { text } = require("express");
 function btnConnectWalletOnClick() {
     console.log('click');
 }
-
+//taylor
 // When the user clicks on the button, open the modal
 function btnBuyThis(btn) {
     var img = btn.nextElementSibling.cloneNode(false);
