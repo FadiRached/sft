@@ -9,50 +9,20 @@
 </head>
 <body>
 
-
-
     <script src="script.js"></script>
-    <h1 style="text-align: center;">Behold! My Store!</h1>
 
     <nav>
-        <ul>
+        <ul id="nav1">
+            <img id="logo" src="img/Logo.png">
             <li><a href="index.html">Home</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="account.html">Account</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li id="contact"><a href="contactus.html">Contact Us and About SFT</a></li>
+
         </ul>
     </nav>
 
-    <div id="storeCards">
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/Monkey1.png">
-            <p>A traditional monkey image!</p>
-            <p id = "description"> This image may allow for the increased potential of monkey intelligence. We have on of Picasso's most hidden art piece here and it is in pristine condition! You may start contract whatever flu was created in the movie "Rise of the Planet of Apes". The one with James Franco ;). Consider purchasing this work of art and support monkey intelligence. For the small price of 25.5K you could improve ape intelligence !</p>
-        </div>
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NewbieSFT.png">
-            <p>A high-class diva!</p>
-            <p id = "description"> This image was found deep within an ancient Mayan ruin. Who knew the Mayans were so into SFT's! Please consider being a factor in history with this purchase. There are rumors that an ancient alien race may come up and take you away but that is just rumors. For a small price of 85,000 dollars you could have this piece of history in your own wallet!</p>
-        </div>
-
-        <div class="card">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NoobieSFT.png">
-            <p>One Blocky Boi!</p>
-            <p id = "description"> This image is so trad! This one was one the artists favorite here at Company co! Help us fight discrimination against all groups and purchase this image. If you twist it the right way it could be considered a tax write off. So please consider purchasing for a small fee of 10.5K!</p>
-        </div>
-
-        <div class="card ">
-            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
-            <img src="img/NubieSFT.png">
-            <p>Smooth as Honey!</p>
-            <p id = "description"> A lovely image that was created by a one Joe M. This creation has been passed down his family for generations. A cannot miss item, you would be lucky to own this. When have you ever seen an image that was so asstounding like this one. Now for the low pice of 4,500 dollars you can be apart of history!</p>  
-        </div>
-    </div>
+    <h1 style="text-align: center;">Explore the SFT Collection</h1>
 
     <div id="myModal" class="modal">
 
@@ -67,9 +37,10 @@
                   <form class="form">
                       <input id="search" onkeyup = "search()" type="text" class="input" placeholder="search..."/>
                       <button id="clear" class="clear-results">clear</button>
-                  </form>
-    
-        </div>
+        </form>
+            
+        <button onclick="btnSell(this)"id="sell">Sell Your SFT</button>
+
         <div class="results-container">
            <ul class= "results-list" id="list">
            </ul>
@@ -77,6 +48,57 @@
     
            <script src="index.js"></script>
     </div>
-    
+
+     <div id="storeCards">
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+          
+            <img src="img/Monkey1.png">
+            <p>A traditional monkey image!</p>
+            <p id = "description"> This image may allow for the increased potential of monkey intelligence. We have on of Picasso's most hidden art piece here and it is in pristine condition! You may start contract whatever flu was created in the movie "Rise of the Planet of Apes". The one with James Franco ;). Consider purchasing this work of art and support monkey intelligence. For the small price of 25.5K you could improve ape intelligence !</p>
+
+            <img id="M1" src="img/Monkey1.png">
+            <p>Traditional Monkey</p>
+            <p id = "description"> This is where the extended description will go.</p>
+
+        </div>
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NewbieSFT.png">
+
+            <p>A high-class diva!</p>
+            <p id = "description"> This image was found deep within an ancient Mayan ruin. Who knew the Mayans were so into SFT's! Please consider being a factor in history with this purchase. There are rumors that an ancient alien race may come up and take you away but that is just rumors. For a small price of 85,000 dollars you could have this piece of history in your own wallet!</p>
+
+            <p>High-Class Diva</p>
+            <p id = "description"> This is where the extended description will go.</p>
+
+        </div>
+
+        <div class="card">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NoobieSFT.png">
+
+            <p>One Blocky Boi!</p>
+            <p id = "description"> This image is so trad! This one was one the artists favorite here at Company co! Help us fight discrimination against all groups and purchase this image. If you twist it the right way it could be considered a tax write off. So please consider purchasing for a small fee of 10.5K!</p>
+
+            <p>Blocky Boi</p>
+            <p id = "description"> This is where the extended description will go.</p>
+
+        </div>
+
+        <div class="card ">
+            <button onclick="btnBuyThis(this)" id="btnBuyThis">Buy This!</button>
+            <img src="img/NubieSFT.png">
+
+            <p>Smooth as Honey!</p>
+            <p id = "description"> A lovely image that was created by a one Joe M. This creation has been passed down his family for generations. A cannot miss item, you would be lucky to own this. When have you ever seen an image that was so asstounding like this one. Now for the low pice of 4,500 dollars you can be apart of history!</p>  
+
+            <p>Smooth as Honey</p>
+            <p id = "description"> This is where the extended description will go.</p>  
+
+        </div>
+    </div>
 </body>
 </html>

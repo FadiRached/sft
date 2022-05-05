@@ -11,5 +11,13 @@ app.get("/", function(req,res) {
   res.send("<h1>Hello CS225</h1>");
 })
 
+app.post("/userPage", function(req, res){
+  var locals = {
+    username: req.body.username,
+    sfts: []
+  };
+
+  res.render("user_page", locals);
+})
 app.listen(3000);
 

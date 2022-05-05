@@ -1,7 +1,9 @@
+const { text } = require("express");
+
 function btnConnectWalletOnClick() {
     console.log('click');
 }
-
+//taylor
 // When the user clicks on the button, open the modal
 function btnBuyThis(btn) {
     var img = btn.nextElementSibling.cloneNode(false);
@@ -14,6 +16,71 @@ function btnBuyThis(btn) {
     document.querySelector(".modal-content").appendChild(desc);
     document.querySelector(".modal-content").appendChild(purchase);
     document.querySelector("#myModal").style.display = "block";
+}
+
+//Opens a modal with a form that lets you list your SFT
+function btnSell(btn){
+  var title = document.createElement("h2");
+  title.textContent = "Sell Your SFT";
+  var div1 = document.createElement("div");
+  var label1 = document.createElement("label");
+  label1.innerHTML = "Please Select your SFT:";
+  var div2 = document.createElement("div");
+  var imageInput = document.createElement("input");
+  imageInput.type = "file";
+  imageInput.name = "image";
+  imageInput.id = "newSFT";
+  var div3 = document.createElement("div");
+  var label2 = document.createElement("label");
+  label2.innerHTML = "Please Provide a name for your SFT:";
+  var div4 = document.createElement("div");
+  var textInput = document.createElement("input");
+  textInput.type = "text";
+  textInput.name = "name";
+  textInput.id = "name";
+  textInput.placeholder = "Enter a Name";
+
+  var div5 = document.createElement("div");
+  var submitBtn = document.createElement("input");
+  submitBtn.type = "submit";
+  submitBtn.value = "Submit";
+  submitBtn.id = "submit";
+
+  div1.appendChild(label1);
+  div2.appendChild(imageInput);
+  div3.appendChild(label2);
+  div4.appendChild(textInput);
+  div5.appendChild(submitBtn);
+
+  document.querySelector(".modal-content").appendChild(title);
+  document.querySelector(".modal-content").appendChild(div1);
+  document.querySelector(".modal-content").appendChild(div2);
+  document.querySelector(".modal-content").appendChild(div3);
+  document.querySelector(".modal-content").appendChild(div4);
+  document.querySelector(".modal-content").appendChild(div5);
+
+  document.querySelector("#myModal").style.display = "block";
+
+  submitBtn.addEventListener('click', event => {
+    var divParent = document.querySelector("#storeCards");
+    var newCard = document.createElement("div");
+    newCard.className = "card";
+    var button = document.createElement("button");
+    button.onclick = "btnBuyThis(this)";
+    button.id = "btnBuyThis";
+    button.textContent = "Buy This!";
+    var image = document.createElement("img");
+    image.id = "addedIMG";
+
+    var name = document.createElement("p");
+    name.textContent = document.querySelector("#name").value;
+
+    newCard.appendChild(button);
+    newCard.appendChild(image);
+    newCard.appendChild(name);
+
+    divParent.appendChild(newCard);
+  });
 }
 
 // When the user clicks on <span> (x), close the modal
